@@ -1,3 +1,3 @@
 name: Adi Pradhan
-markdown: redcarpet
+markdown: kramdown
 pygments: true
