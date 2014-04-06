@@ -63,7 +63,7 @@ The purpose of making a method private is to ensure it can NOT be called with an
 def public_method
   private_method # here the public method invokes the private method (notice there is no receiver, or receiver=self)
 end
-{% endhighlight}
+{% endhighlight %}
 
 By tagging a method as private you are saying only an instance of the class can send this message to itself.
 
