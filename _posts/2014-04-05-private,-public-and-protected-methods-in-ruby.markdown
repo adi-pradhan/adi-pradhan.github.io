@@ -6,19 +6,19 @@ categories: ruby OOP methods
 ---
 
 
-Ruby's method visibility is used to define how other objects may invoke messages on the target class.
+Ruby's method access control is used to define how other objects may invoke messages on the target class.
 
 Loquacious languages like Java require each class and method to describe whether they are `public` or `private` 
 
 {% highlight java %}
 public Class Test Class{
-	public static  void myPublicMethod( String inputString){
-		// Allow other objects invoke this method i.e. send this my message to this object as the receiver.
-	}
+  public static  void myPublicMethod( String inputString){
+	  // Allow other objects invoke this method i.e. send this my message to this object as the receiver.
+  }
 
 	private static void myPrivateMethod( String inputString){
-		//Do Private Things within the context of the object
-	}
+	  //Do Private Things within the context of the object
+  }
 }
 {% endhighlight %}
 
@@ -26,9 +26,9 @@ Ruby simplifies this by making the default access on classes and methods public.
 
 {% highlight ruby %}
 class TestClass
-	def test_method
-		puts "In the public method."
-	end
+  def test_method
+    puts "In the public method."
+  end
 end
 {% endhighlight %}
 
@@ -36,19 +36,19 @@ Ruby makes it very easy to modify acces of the methods. Instead of specifying ac
 
 {% highlight ruby %}
 class MyTestClass
-	def public_method
-		puts "in the public method"
-	end
+  def public_method
+    puts "in the public method"
+  end
 
-	protected
-	def protected_method
-		puts "in the protected method"
-	end
+  protected
+  def protected_method
+    puts "in the protected method"
+  end
 
-	private
-	def private_method
-		puts "in the private method"
-	end
+  private
+  def private_method
+    puts "in the private method"
+  end
 end
 {% endhighlight %}
 
