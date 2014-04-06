@@ -1,2 +1,7 @@
 _site
+<<<<<<< HEAD
 idea*
+=======
+
+*.idea
+>>>>>>> c8e3efa8ebb067478244651ccbb1ad06fb09d282
