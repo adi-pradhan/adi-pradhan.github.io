@@ -52,4 +52,19 @@ class MyTestClass
 end
 {% endhighlight %}
 
+You can also call a `private` method to define what methods in a class are private
+{% highlight ruby %}
+private :a_private_method, :another_private_method
+{% endhighlight %}
 
+The purpose of making a method private is to ensure it can NOT be called with an explicit reciever. It must be called when self is an instance of the class i.e. 
+
+{% highlight ruby %}
+def public_method
+  private_method # here the public method invokes the private method (notice there is no receiver, or receiver=self)
+end
+{% endhighlight}
+
+By tagging a method as private you are saying only an instance of the class can send this message to itself.
+
+Protected methods are less strict, instances of the class can call this method on other instances (as the receiver)
