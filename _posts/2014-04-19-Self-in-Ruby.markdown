@@ -1,7 +1,7 @@
 --- 
 layout: post 
 title:  "Self in Ruby" 
-date:  2014-04-16 9:45:00 
+date:  2014-04-19 9:45:00 
 categories: ruby OOP 
 ---
 
