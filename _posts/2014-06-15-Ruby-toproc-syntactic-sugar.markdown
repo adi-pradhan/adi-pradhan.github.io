@@ -15,7 +15,7 @@ end
 
 #['This','Is','A','Collection']
 
-{% enghighlight %}
+{% endhighlight %}
 
 OK so thats already a nice easy way of doing things. Its clear and concise, however in Ruby there is an even easier way
 
