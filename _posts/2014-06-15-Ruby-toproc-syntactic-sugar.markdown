@@ -25,7 +25,7 @@ OK so thats already a nice easy way of doing things. Its clear and concise, howe
 
 #['This','Is','A','Collection']
 
-{% enghighlight %}
+{% endhighlight %}
 
 Even less code ! But a bit more confusing... Whats going on here? 
 
