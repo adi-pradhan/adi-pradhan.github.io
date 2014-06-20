@@ -12,7 +12,7 @@ Local variables are accesible only in the local scope i.e. method or function e.
 {% highlight ruby %}
 class Book
   def initialize
-  	name = 'Harry Potter and the Philosopher's Stone
+  	name = "Harry Potter and the Philosopher's Stone"
   end
 
   def print_name
@@ -28,7 +28,7 @@ To get a variable whose scope is the entire object instance, we need an instance
 {% highlight ruby %}
 class Book
   def initialize
-  	@name = 'Harry Potter and the Philosopher's Stone
+  	@name = "Harry Potter and the Philosopher's Stone"
   end
 
   def print_name
