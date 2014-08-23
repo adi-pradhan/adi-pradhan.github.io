@@ -36,4 +36,4 @@ end
 puts A::B::MY_CONSTANT # 'test'
 puts MY_CONSTANT 	   # 'on the global scope'
 puts ::MY_CONSTANT     # 'on the global scope'
-% endhighlight %}
+{% endhighlight %}
