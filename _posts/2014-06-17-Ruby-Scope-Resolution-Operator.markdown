@@ -5,8 +5,10 @@ date:  2014-06-17 9:45:00
 categories: Ruby Double-Colon 
 ---
 
-Ruby's scope resolution operation `::` the double-colon is very straightforward to use:
+Ruby has a  scope resolution operation `::` the double-colon and is very straightforward to use:
+
 {% highlight ruby %}
+
 module A
   modules B 
   	MY_CONSTANT = 'test'
@@ -23,6 +25,7 @@ from the module ?
 Easy...
 
 {% highlight ruby %}
+
 MY_CONSTANT = 'on the global scope'
 module A
   modules B 
@@ -36,4 +39,5 @@ end
 puts A::B::MY_CONSTANT # 'test'
 puts MY_CONSTANT 	   # 'on the global scope'
 puts ::MY_CONSTANT     # 'on the global scope'
+
 {% endhighlight %}
