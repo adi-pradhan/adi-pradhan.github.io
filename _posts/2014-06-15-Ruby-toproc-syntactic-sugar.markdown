@@ -29,4 +29,7 @@ OK so thats already a nice easy way of doing things. Its clear and concise, howe
 
 Even less code ! But a bit more confusing... Whats going on here? 
 
-Well `&` is Ruby's to-proc symbol meaning it converts a block to a proc. In this case it is used to create a lambda/proc for the map method and therefore apply `String#capitalize` to each element of the array
+Well `&` is Ruby's to-proc operator meaning it converts a block to a proc. In this case it is used to create a lambda/proc for the map method and therefore apply `String#capitalize` to each element of the array. 
+The argument to this operator is the symbol of the method `String#capitalize` i.e. `:capitalize`
+
+
